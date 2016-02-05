@@ -327,7 +327,7 @@ J'ai, au passage, rajouté une fonction `episodes` à ma classe Movie, dont je v
        </tbody>
     </table>
 ```
-A présent si je me rends dans ma page pour modifier le scénario d'un film, mon template ci dessous, ne m'affichera pas ces modications !
+A présent si je me rends dans ma page pour modifier le scénario d'un Episode, mon template ci dessus, ne m'affichera pas ces modications !
 Pourquoi bou diou ? Parce qu'ici j'affiche "l'histo" de Movie pas de Episode... On comprend à présent ici mon intéret pour 
 le sous formulaire. Le "problème" aurait été masqué si je m'étais arrêté à un seul simple formulaire. 
 
@@ -398,4 +398,4 @@ de [Gagaro](https://github.com/gagaro) le grââl : une application nommée [tra
 Pour une fois que je fais ma faignasse en ne codant pas tout by myself, [ça fait plaisir de tomber sur une appli pareille](https://github.com/makinacorpus/django-tracking-fields) ! 
 
 
-Si vous voulez jouer avec le code de ce gestionnaire de films [c'est par ici la bonne soupe](https://github.com/foxmask/
+Si vous voulez jouer avec le code de ce gestionnaire de films [c'est par ici la bonne soupe](https://github.com/foxmask/tracking-starwars)
