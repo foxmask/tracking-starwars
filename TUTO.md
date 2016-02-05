@@ -1,11 +1,3 @@
-Title: Histoire de ne pas perdre le fil : TrackingFields !
-Date: 2016-02-29 01:00
-Category: General
-Tags: python, django, trackingfields
-Slug: histoire-de-ne-pas-perdre-le-fil-trackingfields
-Authors: FoxMaSk
-status: draft
-
 ## Preambule 
 
 Je sais bien qu'une partie de ce billet ne plaira pas à Sam&Max (thanks to the Django CBV & Mixin:)
