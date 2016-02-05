@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Manage stories for StarWars</title>
+</head>
+<body>
+<h1>Stories Manager for Starwars</h1>
+{% block content %}
+<a href="{% url 'movie_create' %}">Add a movie</a><br/>
+<h2>Movie list</h2>
+<ul>
+{% for movie in movies %}
+<li>{{ movie.name }} <a href="{% url 'movie' movie.id %}">Consulter les details du films</a> - <a href="{% url 'movie_edit' movie.id %}">Modifier</a></li>
+{% endfor %}
+</ul>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Detail of {{ object }}</h3>
+    <table>
+        <caption>History of the modifications of {{ object }} </caption>
+        <thead>
+            <tr><th>Old Value</th><th>New Value</th><th>By</th><th>at</th></tr>
+        </thead>
+        <tbody>
+    {% for h in object.histo.all %}
+       {% for f in h.fields.all %}
+           <tr><td>{{ f.old_value }}</td><td>{{ f.new_value }}</td><td>{{ h.user }}</td><td>{{ h.date }}</td></tr>
+       {% endfor %}
+    {% endfor %}
+        </tbody>
+    </table>
+    {% for ep in object.episodes %}
+        {% if ep.histo.all %}
+    <table>
+        <caption>history of the modifications of Episode</caption>
+        <thead>
+            <tr><th>Old Value</th><th>New Value</th><th>By</th><th>at</th></tr>
+        </thead>
+        <tbody>
+            {% for h in ep.histo.all %}
+                {% for f in h.fields.all %}
+                {% if f.old_value == f.new_value %} {# they are the same when the new value is created to avoid to display "null" #}
+                {% else %}
+                <tr><td>{{ f.old_value }}</td><td>{{ f.new_value }}</td><td>{{ h.user }}</td><td>{{ h.date }}</td></tr>
+                {% endif %}
+                {%  endfor %}
+            {% endfor %}
+        </tbody>
+     </table>
+        {% endif %}
+    {% endfor %}
+{% endblock %}

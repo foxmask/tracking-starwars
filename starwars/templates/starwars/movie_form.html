@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Create a movie</h3>
+<form method="post" action="">
+    {% csrf_token %}
+    {{ formset.management_form }}
+    <table>
+    {{ form.as_table }}
+    </table>
+    <table>
+    {{ episode_form.as_table }}
+    </table>
+    <button>Save</button>
+</form>
+{% endblock %}
