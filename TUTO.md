@@ -3,13 +3,14 @@
 Je sais bien qu'une partie de ce billet ne plaira pas à Sam&Max (thanks to the Django CBV & Mixin:)
 
 ## Introduction
+Le but du billet sera de montrer comment, sans rien changer dans un formulaire, on peut arriver à pister les modifications des données effectuées dans l’application
 
-La première partie va planter le décors en démarrant par vous montrer comment s'articule une application avec formulaire 
+La première partie va planter le décor en démarrant par vous montrer comment s'articule une application avec formulaire 
 composé d'un sous formulaire en sus (j'expliquerai pourquoi après :) 
 
 Pour ce faire, je vous emmene dans l'univers du 7° art, viendez on va refaire StarWars!
 
-Un modele, un formulaire, une vue, un template et ca sera fini 
+Un modèle, un formulaire, une vue, un template et ca sera fini 
 
 ## le models.py
 
@@ -372,10 +373,10 @@ Aux utilisateurs avertis qui diraient :
 
 > pourquoi l'avoir recodé coté front puisque c'est déjà géré coté admin sans lever le petit doigt ?
 
-Parce que George Lucas veut montrer les modifications apportées à son bébé StarWars par Walt Disney, au monde entier pardis ! 
+Parce que George Lucas veut montrer les modifications apportées à son bébé StarWars par Walt Disney, au monde entier pardi ! 
 
 Ah un détail en passant : dans l'admin la vue qui affiche la liste des modifications donne : "Episode Object" ou "Movie Object". 
-Pour eviter ça, zavez dû remarqué que j'ai mis la fonction **__str__** dans mes modèles ce qui vous rendra une valeur 
+Pour éviter ça, zavez dû remarqué que j'ai mis la fonction **__str__** dans mes modèles ce qui vous rendra une valeur 
 plus "lisible" sur ce qui a été modifié.
 
 
